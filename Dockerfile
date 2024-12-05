@@ -12,6 +12,7 @@ RUN if [ ! -f /etc/apt/sources.list ]; then \
     zip \
     curl \
     git \
+    openssh-client \
     && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
     && echo ${TZ} > /etc/timezone \
     && dpkg-reconfigure --frontend noninteractive tzdata \
